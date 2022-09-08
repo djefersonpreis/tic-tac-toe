@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import MultiplayerGame from "./Pages/multiplayer";
 import EasyGame from "./Pages/easy";
+import HardGame from "./Pages/hard";
 
 import './App.css';
 
@@ -29,11 +30,17 @@ function App() {
                         </div>
                     )}
                 </div>
+
                 {gameType === 1 && (
                     <MultiplayerGame />
                 )}
+
                 {gameType === 2 && (
                     <EasyGame />
+                )}
+
+                {gameType === 3 && (
+                    <HardGame />
                 )}
             </div>
         </div>
